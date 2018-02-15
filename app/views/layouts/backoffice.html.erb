@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Rails</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+
+  <body data-sa-theme="1" class="aside-toggled">
+    <main class="main">
+
+      <!--<%= render 'layouts/partials/loader_view' %>-->
+
+      <header class="header">
+        <%= render 'layouts/partials/header_view' %>
+      </header>
+
+      <aside class="sidebar sidebar--hidden">
+        <%= render 'layouts/partials/sidebar_view' %>
+      </aside>
+
+      <section class="content content--full">
+        <%= yield %>
+      </section>
+
+    </main>
+  </body>
+
+</html>
+
+
+

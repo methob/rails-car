@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @backoffice_car.marca %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @backoffice_car.ano %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @backoffice_car.modelo %>
+</p>
+
+<p>
+  <strong>Cor:</strong>
+  <%= @backoffice_car.cor %>
+</p>
+
+<%= link_to 'Edit', edit_backoffice_car_path(@backoffice_car) %> |
+<%= link_to 'Back', backoffice_cars_path %>

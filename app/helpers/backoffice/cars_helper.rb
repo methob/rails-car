@@ -1,0 +1,2 @@
+module Backoffice::CarsHelper
+end

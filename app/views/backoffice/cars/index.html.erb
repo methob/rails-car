@@ -1,0 +1,43 @@
+
+  <header class="content__title">
+    <h1>Carros</h1>
+  </header>
+
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Adicionar Carros</h4>
+
+      <%= link_to 'Adicionar Novo carro', new_backoffice_car_path, class: 'add_button' %>
+
+      <div class="table-responsive">
+        <table id="data-table" class="table">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>marca</th>
+            <th>ano</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          <% @backoffice_cars.each do |backoffice_car| %>
+
+              <tr role="row" class="odd">
+                <td scope="row"> <%= backoffice_car.id %> </td>
+                <td class="sorting_1"> <%= backoffice_car.marca %> </td>
+                <td> <%= backoffice_car.ano %> </td>
+                <td> <%= backoffice_car.modelo %> </td>
+                <td> <%= backoffice_car.cor %> </td>
+              </tr>
+
+          <% end %>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
